@@ -1,21 +1,26 @@
-
-# KCNav簡易マニュアル
+# KCNav 簡単な使い方紹介
 
 ## KCNavとは
 * 艦これのルート分岐やドロップ情報などを調べられるサイトです
 * 有志が送信した出撃データを基にしています
 * Chamiさんが開発しており、データはTsunDBのものです
+  * マニュアル筆者はKCNav、またそのデータ元のTsunDBいずれの関係者でもありません。勝手に書いてるだけです
+* 有志個人で運営されています。負担をかけないようお願いします。重いときは時間を変えてください。
 
 ## アクセス
 TsunKit https://kc.piro.moe/nav/ にアクセスし、上のKCNavをクリック
+![image](https://user-images.githubusercontent.com/83385857/116779587-1e0cfb80-aab2-11eb-8db0-59b2b1a85e22.png)
 
 ## 使い方
 ### 最初に海域を選ぶ
 * 左上の Map から調べたい海域を選ぶ
 * 難易度やクリア済みか否かで絞り込みたい場合はその下のDifficulty, Clearedで条件を選択
 * 右の方にあるMap backgroundのチェックを入れる
-* Apply Filtersを押す
-  → マップとマスの画面が表示されるはず
+* Apply Filtersを押す  → マップとマスの画面が表示されるはず
+
+![image](https://user-images.githubusercontent.com/83385857/116779294-6cb99600-aab0-11eb-9298-bef28c89e529.png)
+![image](https://user-images.githubusercontent.com/83385857/116779265-48f65000-aab0-11eb-892b-862631be9775.png)
+
 
 ### 画面の見方
 * 艦これのマップ画像の上に、各マス(nodes)とそれをつなぐルート(edge)が表示されます。
@@ -23,6 +28,7 @@ TsunKit https://kc.piro.moe/nav/ にアクセスし、上のKCNavをクリック
 * マスの色や囲みは種類を示します。一番上のHelpを見ると説明が見えます
 * ドラッグやホイールでマップを動かせます
 
+![image](https://user-images.githubusercontent.com/83385857/116779328-ae4a4100-aab0-11eb-943b-3f5f4d00a284.png)
 
 ### 目的のデータが出るよう条件を設定する
 * KCNavの基本的な考え方は、データベースにある全体のデータから条件を色々入力して"絞り込む(filter)"というものです
@@ -44,11 +50,16 @@ TsunKit https://kc.piro.moe/nav/ にアクセスし、上のKCNavをクリック
   * この時期がみたいというのがアレば上部のStart, Endに期間を入力
   * 最後にApply filterで絞り込みを適用する
 
+![image](https://user-images.githubusercontent.com/83385857/116779349-dc2f8580-aab0-11eb-8012-fdaae2061336.png) ![image](https://user-images.githubusercontent.com/83385857/116779358-f0738280-aab0-11eb-8e46-67f7d377da9d.png)
+
 #### ルート情報を調べる
 ##### 通るマス/ルートを指定
 * 調べたいマス/ルート(マス間の線)をクリックしてFilter to node/edgeを押す
  → そこを通ったデータだけ絞り込まれて表示される
 * 調べたい箇所の分 ↑のフィルタを追加する
+
+![image](https://user-images.githubusercontent.com/83385857/116779400-3a5c6880-aab1-11eb-909b-f669fc0efd80.png)
+
 
 ##### 索敵での分岐を調べる
 * マスをクリックして LoS 。索敵スコアに対してどこに進んだかが表示される
@@ -66,15 +77,17 @@ TsunKit https://kc.piro.moe/nav/ にアクセスし、上のKCNavをクリック
 * 上部 Comp の Main/Escort/All に編成を記載して Apply Filters で指定艦種だけのデータを出せる (Main=第一艦隊、Escort=第二艦隊)
 * 数+艦種記号で記載する。 DDなら駆逐艦1隻、4DDなら駆逐艦4隻
   * 艦種記号はググって
-  * XXは任意(多分)
+  * XXはなんでも(多分)。隻数合わせるとき使う
   * 名前も行けるようだが良くわかりません
-* 編成数と一致した指定が必要。4つ指定したら4隻編成のみ出る。
+* 編成数と一致した指定が必要。4つ指定したら4隻編成のみ出る
 * Set FSのチェックを入れると条件の1個目が旗艦の指定になる
-* 右側のSS SSV AV ... のところでも艦種の有無を選べる。緑が編成、赤が不在。
+* 右側のSS SSV AV ... のところでも編成艦種の有無を選べる。緑が編成、赤が不在。
 * 最後にApply Filters押して適用。すでに分析画面が下部に出てる場合はその上部のApply Filtersでそこにも反映される。
 * 例: 
   * 4DD = 駆逐4隻。駆逐5は含まない
   * 1CL 1CV 3DD 1XX = 軽1 空1 駆3 他1
+  * 1-5 旗艦海防1 駆逐3 計3隻編成での結果が↓(DE 2DD)。3隻しか指定してないので海防1 駆逐3のような4隻編成は含まれていない
+![image](https://user-images.githubusercontent.com/83385857/116779510-860f1200-aab1-11eb-80b9-eca7d1fd4871.png)
 
 
 ##### その他追加条件
@@ -82,18 +95,10 @@ TsunKit https://kc.piro.moe/nav/ にアクセスし、上のKCNavをクリック
   * locked = 未開放、unlocked = 解放済み
 
 
-
-
-
 ## 注意書き
-* 重いときは別の時間にアクセスしましょう
 * 便利に使わせてもらったらサポートもしましょう
-* マニュアル筆者はKCNav、またそのデータ元のTsunDBいずれの関係者でもありません。勝手に書いてるだけです
-* マニュアルに間違いがあったらissuesかプルリク投げるか@__unkochan__に連絡してください
+* マニュアルに間違いがあったら[github](https://github.com/kimo-ta/kcnmanual)でissuesかプルリク投げるか、@__unkochan__に連絡してください
 
 ### サポート方法
-* KCNav: 画面下部のko-fiから寄付を送る。単発払いのみ
-* TsunDB: バックエンドのデータベース。画面下部のTsunDBでサイトに飛んで、右上のBECOME A PATRONから寄付。登録すれば毎月の継続支払い。
-
-
-
+* KCNav: 画面下部のko-fiから寄付を送る。単発寄付のみ。
+* TsunDB: バックエンドのデータベース。画面下部のTsunDBでサイトに飛んで、右上のBECOME A PATRONから寄付。登録すれば毎月自動寄付できる。
