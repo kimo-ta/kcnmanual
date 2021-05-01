@@ -10,7 +10,7 @@ title: KCNav 簡単な使い方紹介
 * 有志個人で運営されています。負担をかけないようお願いします。重いときは時間を変えてください。
 
 ## アクセス
-[TsunKit](https://kc.piro.moe/nav/)を開き上のKCNavをクリック
+[TsunKit](https://kc.piro.moe/)を開き上のKCNavをクリック
 
 ![image](https://user-images.githubusercontent.com/83385857/116779587-1e0cfb80-aab2-11eb-8db0-59b2b1a85e22.png)
 
@@ -66,7 +66,7 @@ title: KCNav 簡単な使い方紹介
 
 ##### 索敵での分岐を調べる
 * マスをクリックして LoS 。索敵スコアに対してどこに進んだかが表示される
-* 分岐係数はLos Method: Cn1~Cn4で変更
+* 分岐係数はLos Method: Cn1～Cn4で変更
 * データ絞り込みしたい場合は上部のFleet -> Los(索敵スコア)やRadars(電探数)に指定
 
 ##### あるルートを通過する艦種編成や索敵値を調べる
@@ -74,7 +74,7 @@ title: KCNav 簡単な使い方紹介
 * Statisticsで通過した索敵値や電探数がわかる
 * Compositionsで通過した艦種編成がわかる
   * ここから各行のfilterを押すとその編成でデータを絞れる
-* Fleetsで具体的な編成データが見える
+* Fleetsで実際の編成データが見える
 
 #### 艦種編成を指定してどのルートを移動するか調べる
 * 上部 Comp の Main/Escort/All に編成を記載して Apply Filters で指定艦種だけのデータを出せる (Main=第一艦隊、Escort=第二艦隊)
@@ -89,7 +89,7 @@ title: KCNav 簡単な使い方紹介
 * 例: 
   * 4DD = 駆逐4隻。駆逐5は含まない
   * 1CL 1CV 3DD 1XX = 軽1 空1 駆3 他1
-  * 1-5 旗艦海防1 駆逐3 計3隻編成での結果が↓(DE 2DD)。3隻しか指定してないので海防1 駆逐3のような4隻編成は含まれていない
+  * 1-5マップ 旗艦海防1 駆逐3の計3隻編成での結果が↓(DE 2DD)。3隻しか指定してないので海防1 駆逐3のような4隻編成は含まれていない
 ![image](https://user-images.githubusercontent.com/83385857/116779510-860f1200-aab1-11eb-80b9-eca7d1fd4871.png)
 
 
