@@ -10,7 +10,8 @@ title: KCNav 簡単な使い方紹介
 * 有志個人で運営されています。負担をかけないようお願いします。重いときは時間を変えてください。
 
 ## アクセス
-TsunKit https://kc.piro.moe/nav/ にアクセスし、上のKCNavをクリック
+[TsunKit](https://kc.piro.moe/nav/)を開き上のKCNavをクリック
+
 ![image](https://user-images.githubusercontent.com/83385857/116779587-1e0cfb80-aab2-11eb-8db0-59b2b1a85e22.png)
 
 ## 使い方
@@ -33,8 +34,8 @@ TsunKit https://kc.piro.moe/nav/ にアクセスし、上のKCNavをクリック
 ![image](https://user-images.githubusercontent.com/83385857/116779328-ae4a4100-aab0-11eb-943b-3f5f4d00a284.png)
 
 ### 目的のデータが出るよう条件を設定する
-* KCNavの基本的な考え方は、データベースにある全体のデータから条件を色々入力して"絞り込む(filter)"というものです
-* つまり、目的のデータを表示する ＝ この絞り込み(filter) を上手く適用する、ということです
+* KCNavの基本的な考え方は、 **データベースにある全体のデータから検索条件を掛けて"欲しい結果まで絞り込む(filter)"** というものです
+* つまり、目的のデータを表示する ＝ この絞り込み(filter)を上手く設定する、ということです
 * 例えば海域2-5のデータで絞り込む、難易度＝甲で絞り込む、駆逐４その他２の編成で絞り込む、Cマスを通ったものだけを絞り込む、など
 
 
